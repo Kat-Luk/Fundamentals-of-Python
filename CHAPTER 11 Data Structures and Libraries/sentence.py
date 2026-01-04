@@ -1,0 +1,10 @@
+import numpy as np
+sentence = input("Enter a full sentence: ")
+print(f"Original sentence: {sentence}")
+sentence_lst = sentence.split(' ')
+set_result = set(sentence_lst)
+print(f"Set of unique words: {set_result}")
+tuple_result = tuple(sorted(set_result))
+print(f"Alphabetically sorted tuple: {tuple_result}")
+array_result = np.array(tuple_result)
+print(f"NumPy array of words: {array_result}")
